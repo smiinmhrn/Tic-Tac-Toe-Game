@@ -15,6 +15,7 @@ public class AddSettings {
      * This function is to determine the status of win, loss and draw in the form of a message in play with computer
      * @param board => our game board
      * @param list => our list which we and computer can choose from it update each times
+     * other parameters related with settings
      */
     public static void playWithCom(String [][] board , ArrayList<String> list , int row , int column , int win , int block){
 
@@ -61,6 +62,7 @@ public class AddSettings {
      * This function is to determine the status of win, loss and draw in the form of a message in play with two players
      * @param board => our game board
      * @param list => our list which we and computer can choose from it and update each times
+     * other parameters related with settings
      */
     public static void playWithPlayers(String [][] board , ArrayList<String> list , int row , int column , int win , int block){
 
@@ -106,6 +108,7 @@ public class AddSettings {
     /**
      * This function is to print the board every time it is updated
      * @param board => our game board
+     * other parameters related with settings
      */
     public static void printBoard(String[][] board , int row , int column){
 
@@ -123,6 +126,7 @@ public class AddSettings {
      * This function is to check the presence of each player's move and transfer the move to the game board if it exists
      * @param board => our game board
      * @param list => our list which we and computer can choose from it and update each times
+     * other parameters related with settings
      * @return => check if player1 win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int player1Move(String [][] board , ArrayList<String> list , int row , int column , int win){
@@ -187,6 +191,7 @@ public class AddSettings {
      * This function is to check the presence of each player's move and transfer the move to the game board if it exists
      * @param board => our game board
      * @param list =>  our list which we and computer can choose from it and update each times
+     * other parameters related with settings
      * @return => check if player2 win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int player2Move(String [][] board , ArrayList<String> list , int row , int column , int win){
@@ -252,6 +257,7 @@ public class AddSettings {
      * This function is to check the presence of each computer's move and transfer the move to the game board if it exists
      * @param board => our game board
      * @param list => our list which we and computer can choose from it and update each times
+     * other parameters related with settings
      * @return => => check if computer win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int computerMove(String [][] board , ArrayList<String> list , int row , int column , int win ){
@@ -310,6 +316,7 @@ public class AddSettings {
      * @param board => our game bored
      * @param x => gives use the position of the player move in row of game board
      * @param xo => give use X ore O then we can check which player (X ore O) will win
+     * other parameters related with settings
      * @return => check if player win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int rowCheck( String [][] board , int x , String xo , int win , int column){
@@ -335,6 +342,7 @@ public class AddSettings {
      * @param board => our game bored
      * @param y => gives use the position of the player move in column of game board
      * @param xo => give use X ore O then we can check which player (X ore O) will win
+     * other parameters related with settings
      * @return => check if player win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int columnCheck( String [][] board , int y , String xo , int win , int row){
@@ -357,6 +365,7 @@ public class AddSettings {
     }
     /**
      * change settings and write it into file. parameters can change if player wants
+     * other parameters related with settings
      */
     public static void changeSettings(String row , String column , String block , String win){
 
@@ -395,6 +404,7 @@ public class AddSettings {
      * @param xo => give use X ore O then we can check which player (X ore O) will win
      * @param columnMove => the location of players move in game board => j
      * @param rowMove => the location of players move in game board => i
+     * other parameters related with settings
      * @return => check if player win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int mainDiameterCheck(int rowMove , int columnMove , int row , int column , int win ,  String [][] board , String xo){
@@ -443,6 +453,7 @@ public class AddSettings {
      * @param xo => give use X ore O then we can check which player (X ore O) will win
      * @param rowMove => the location of players move in game board => i
      * @param columnMove => the location of players move in game board => j
+     * other parameters related with settings
      * @return => check if player win ore not if it returns 0 => not win if it returns 1 => win
      */
     public static int minorDiameterCheck(int rowMove , int columnMove , int row , int column , int win ,  String [][] board , String xo){
@@ -648,6 +659,7 @@ public class AddSettings {
     }
     /**
      * the body of game runs in this function
+     * parameters related with settings
      */
     public static void startGame(int row , int column , int win , int block){
 
