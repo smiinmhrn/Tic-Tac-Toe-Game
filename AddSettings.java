@@ -517,7 +517,7 @@ public class AddSettings {
                                 Integer.parseInt(row);
                                 break ;
                             } catch (Exception e) {
-                                System.out.println("\033[91m" + "The given number for row is not acceptable. try again" + "\033[0m");
+                                System.out.println("\033[91m" + "Not acceptable. Enter a \"number\" try again" + "\033[0m");
                                 row = input.next();
                             }
                         }
@@ -537,7 +537,7 @@ public class AddSettings {
                                 Integer.parseInt(column);
                                 break ;
                             } catch (Exception e) {
-                                System.out.println("\033[91m" + "The given number for column is not acceptable. try again" + "\033[0m");
+                                System.out.println("\033[91m" + "Not acceptable. Enter a \"number\" try again" + "\033[0m");
                                 column = input.next();
                             }
                         }
@@ -559,7 +559,7 @@ public class AddSettings {
                                 Integer.parseInt(blocks);
                                 break ;
                             } catch (Exception e) {
-                                System.out.println("\033[91m" + "The given number for blocks is not acceptable. try again" + "\033[0m");
+                                System.out.println("\033[91m" + "Not acceptable. Enter a \"number\" try again" + "\033[0m");
                                 blocks = input.next();
                             }
                         }
@@ -579,7 +579,7 @@ public class AddSettings {
                                 Integer.parseInt(win);
                                 break ;
                             } catch (Exception e) {
-                                System.out.println("\033[91m" + "The given number for wining is not acceptable. try again" + "\033[0m");
+                                System.out.println("\033[91m" + "Not acceptable. Enter a \"number\" try again" + "\033[0m");
                                 win = input.next();
                             }
                         }
