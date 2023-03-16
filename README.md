@@ -42,3 +42,4 @@ more options :
 
 • Have ability to clear the screen (not working in intellij)
 
+• you can restart the game in the end
