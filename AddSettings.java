@@ -512,8 +512,17 @@ public class AddSettings {
                     System.out.println("\033[3m" + "How many rows do you want the game board have? ");
                     String row = input.next();
                     while (true) {
+                        while (true) {
+                            try {
+                                Integer.parseInt(row);
+                                break ;
+                            } catch (Exception e) {
+                                System.out.println("\033[91m" + "The given number for row is not acceptable. try again" + "\033[0m");
+                                row = input.next();
+                            }
+                        }
 
-                        if (row.equals("0")) {
+                        if (Integer.parseInt(row) <= 0) {
                             System.out.println("\033[91m" + "The given number for row is not acceptable. try again" + "\033[0m");
                             row = input.next();
                         } else {
@@ -523,8 +532,17 @@ public class AddSettings {
                     System.out.println("How many columns do you want the game board have?");
                     String column = input.next();
                     while (true) {
+                        while (true) {
+                            try {
+                                Integer.parseInt(column);
+                                break ;
+                            } catch (Exception e) {
+                                System.out.println("\033[91m" + "The given number for column is not acceptable. try again" + "\033[0m");
+                                column = input.next();
+                            }
+                        }
 
-                        if (column.equals("0")) {
+                        if (Integer.parseInt(column) <= 0) {
                             System.out.println("\033[91m" + "The given number for column is not acceptable. try again" + "\033[0m");
                             column = input.next();
                         } else {
@@ -536,6 +554,15 @@ public class AddSettings {
 
                     int result = Integer.parseInt(row) * Integer.parseInt(column);
                     while (true) {
+                        while (true) {
+                            try {
+                                Integer.parseInt(blocks);
+                                break ;
+                            } catch (Exception e) {
+                                System.out.println("\033[91m" + "The given number for blocks is not acceptable. try again" + "\033[0m");
+                                blocks = input.next();
+                            }
+                        }
 
                         if (Integer.parseInt(blocks) >= result) {
                             System.out.println("\033[91m" + "The given number for blocks is not acceptable. try again" + "\033[0m");
@@ -547,16 +574,23 @@ public class AddSettings {
                     System.out.println("How many squares you want to determine the winner of the game");
                     String win = input.next();
                     while (true) {
+                        while (true) {
+                            try {
+                                Integer.parseInt(win);
+                                break ;
+                            } catch (Exception e) {
+                                System.out.println("\033[91m" + "The given number for wining is not acceptable. try again" + "\033[0m");
+                                win = input.next();
+                            }
+                        }
 
-                        if (win.equals("0") || win.equals("1")) {
+                        if (Integer.parseInt(win) <= 0 || Integer.parseInt(win) == 1) {
                             System.out.println("\033[91m" + "The given number for wining is not acceptable. try again" + "\033[0m");
                             win = input.next();
                         } else {
                             break;
                         }
                     }
-
-
                     changeSettings(row, column, blocks, win);
                     break label;
 
